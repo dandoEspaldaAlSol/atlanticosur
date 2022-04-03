@@ -179,23 +179,15 @@ a:visited{
     grid-area: spoty2;     
      }
 
-     @media screen and (max-width: 768px) {
-        .body {
-                background-color: #F68989;
-          }
+@media screen and (max-width: 768px) {
+    .body {
+        background-color: #F68989;
+    }
 
-          .card1{
-            font-size: 10px;
-            font-weight: bold;
-            text-align: left;
-          }
+    .card1{
+        font-size: 10px;
+         font-weight: bold;
+        text-align: left;
+    }
     
      
-
- 
- 
-
-
-
-
-
