@@ -136,9 +136,6 @@ footer{
     grid-area: nav;     
 }
 
-
-
-
 #gridDiscografia {
     margin-left: 20px;
     margin-top: 100px;
@@ -162,10 +159,18 @@ footer{
     height: 40px;
 }
 
+#nav{
+    grid-area: nav;
+}
+
 #titulo {
+    max-width: 500px;
+    max-height: 50px;
     grid-area: titulo;     
 }
 #titulo2 {
+    max-width: 500px;
+    max-height: 50px;
     grid-area: titulo2;     
 }
 
@@ -206,9 +211,10 @@ footer{
         margin-top: 50px;
         margin-left: 10%;
         grid-template-columns: 1fr; 
-        grid-template-rows: 40px 1fr 1fr 40px 1fr 1fr; 
+        grid-template-rows: 30px 50px 1fr 1fr 50px 1fr; 
         grid-template-areas:
-         "titulo"
+        "nav" 
+        "titulo"
          "foto" 
          "spoty"
          "titulo2"
