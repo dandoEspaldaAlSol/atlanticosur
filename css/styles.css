@@ -92,7 +92,9 @@ a:visited{
 #flyers{
     margin-top: 5%;
     margin-left: 5%;
-    align-items: stretch;}
+    align-items: stretch;
+    grid-area: flyers;
+}
 
 .forma{
     max-width:500px;
@@ -163,6 +165,18 @@ footer{
      "titulo2 titulo2"
      "foto2 spoty2"
      "pie pie";
+}
+
+#gridShows{
+    display: grid;
+    margin-top: 50px;
+    margin-left: 5%;
+    grid-template-columns: 500px 500px 500px; 
+    grid-template-rows: 1fr; 
+    grid-template-areas:
+    "nav nav nav" 
+    "flyers flyers flyers"
+    "pie pie pie" ;
 }
 
 #pie {
@@ -317,4 +331,14 @@ footer{
         height: 40px;
     }
     
+    #gridShows{
+        margin-top: 50px;
+        margin-left: 5%;
+        grid-template-columns: 500px; 
+        grid-template-rows: 50px 500px 1fr; 
+        grid-template-areas:
+        "nav" 
+        "flyers"
+        "pie";
+    }
     
