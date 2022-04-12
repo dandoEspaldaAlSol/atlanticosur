@@ -305,7 +305,7 @@ footer{
     }
 
     .formulario {
-        margin-left: 20%;
+        margin-left: 10%;
     } 
 
     .card-integrantes-top{
@@ -358,4 +358,7 @@ footer{
         margin-top: 20%;
     }
     
+    .forma{
+        max-width:300px;
+        max-height:400px;
 }
