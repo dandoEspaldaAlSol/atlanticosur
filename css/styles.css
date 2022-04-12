@@ -268,8 +268,8 @@ footer{
          "pie";
     }
     #foto2{
-        max-width: 500px;
-        max-height: 600px;
+        max-width: 300px;
+        max-height: 500px;
     }
     #spoty2{
         width: 400px;
@@ -277,8 +277,8 @@ footer{
     }
     
     #foto{
-        max-width: 500px;
-        max-height: 600px;
+        max-width: 300px;
+        max-height: 500px;
     }
     
     #spoty {
