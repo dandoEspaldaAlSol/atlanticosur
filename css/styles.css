@@ -255,7 +255,7 @@ footer{
     #gridDiscografia{
         margin-top: 50px;
         margin-left: 10%;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 400px; 
         grid-template-rows: 30px 50px 1fr 1fr 50px 1fr; 
         grid-template-areas:
         "nav" 
@@ -336,7 +336,7 @@ footer{
     
     #gridShows{
         margin-top: 10px;
-        grid-template-columns: 500px; 
+        grid-template-columns: 400px; 
         grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 40px; 
         grid-template-areas:
         "nav" 
