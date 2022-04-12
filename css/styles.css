@@ -361,4 +361,9 @@ footer{
     .forma{
         max-width:300px;
         max-height:400px;
+    }
+
+    li{
+        padding: 15px;
+    }
 }
