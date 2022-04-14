@@ -5,72 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <title>Discografia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <title>Discografia</title>
+
+   <style>
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        background-color: #F68989;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #000;
+    }
+    
+    .row.content{
+        height: 450px
+    }
+    
+    .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 100%;
+        color: black;
+    }
+    
+    footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+    }
+    
+    
+    @media screen and (max-width: 767px) {
+        .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+        .row.content {height:auto;} 
+    }
+  </style>
 </head>
+
 <body>
-    <section id="gridDiscografia"> 
-    <div id="nav" class="card1">
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                  
-                    <li>
-                        <a href="../pages/banda.html">Banda</a>
-                    </li>
-               
-                    <li>
-                        <a href="../pages/contacto.html">Contacto</a>
-                    </li>
-        
-                    <li>
-                        <a href="discografia.html">Discografia</a>
-                    </li>
-                
-                    <li>
-                        <a href="../pages/shows.html">Shows</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"> <a href="../index.html">Inicio</a></li>
+              <li><a href="../pages/banda.html">Banda</a></li>
+              <li><a href="../pages/contacto.html">Contacto</a></li>
+              <li><a href="discografia.html">Discografia</a></li>
+              <li><a href="../pages/shows.html">Shows</a></li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <div><h3>Atlántico sur - Demo juvenil </h3></div>
+    
+      <div class="row row-cols-2"> 
+        <div class="col">
+        <img src="../img/tapa atlantico a.jpg" alt="tapa disco">
+            <p>
+                    Primer demo, en cual como duo se volcaron 
+                    canciones pandemicas, sobre la soledad y la tristeza.
+            </p>
+        </div>
+    
+        <div class="col"><iframe src="https://open.spotify.com/embed/album/4xa7P06sqK7xLJEOdv9ycd?utm_source=generator" width="" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+
     </div>
 
+    <div><h3>Atlántico sur - ep </h3></div>
     
-   
-    <div id="titulo"><h3 class="animate__animated animate__pulse animate__infinite">Atlántico sur - Demo juvenil </h3></div>
+    <div class="row row-cols-2">
     
-    <div id="spoty"><iframe src="https://open.spotify.com/embed/album/4xa7P06sqK7xLJEOdv9ycd?utm_source=generator" width="" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+        <div class="col">
+        <img src="../img/posible tapa 5.jpg" alt="tapa disco">
+            <p>
+                    Ya con 5 integrantes a banda completa.
+                    por el camino del mid-west-emo se sigue en la
+                    busqueda de un sonido mas variado.
+            </p>
+        </div>
+    <div class="col"><iframe src="https://open.spotify.com/embed/album/4xa7P06sqK7xLJEOdv9ycd?utm_source=generator" width="300" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 
-    <div id="foto">
-    
-    <img id="sizeImg" src="../img/tapa atlantico a.jpg" alt="tapa disco">
-        <p class="formatoParrafo">
-                Primer demo, en cual como duo se volcaron 
-                canciones pandemicas, sobre la soledad y la tristeza.
-        </p>
     </div>
-
-    <div id="titulo2"><h3 class="animate__animated animate__pulse animate__infinite">Atlántico sur - ep </h3></div>
-    
-    <div id="spoty2"><iframe src="https://open.spotify.com/embed/album/4xa7P06sqK7xLJEOdv9ycd?utm_source=generator" width="300" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
-
-    <div id="foto2">
-    
-    <img id="sizeImg" src="../img/posible tapa 5.jpg" alt="tapa disco">
-        <p class="formatoParrafo">
-                Ya con 5 integrantes a banda completa.
-                por el camino del mid-west-emo se sigue en la
-                busqueda de un sonido mas variado.
-        </p>
-    </div>
-
-    <div id="pie"><footer>Todos los derechos reservados</footer></div>
-
-</section>
+    <div class="container"><footer>Todos los derechos reservados</footer></div>
 
 
 </body>
