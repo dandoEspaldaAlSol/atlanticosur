@@ -6,62 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
     <title>Shows</title>
 
     <style>
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-            background-color: #F68989;
-        }
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        background-color: #F68989;
+      }
+    
+    .navbar-inverse .navbar-nav > li > a {
+        color: #000;
+      }
+            
+    .row.content{
+        height: 450px
+      }
+            
+    .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 100%;
+        color: black;
+      }
+    
+    img{
+        max-width: 400px;
+      
+      }
+      .centrar{
+		    margin:auto;
+		    display:block;
+    }
+            
+    footer {
+      background-color: #874356;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      margin-top: 100px;
+    }
 
-        .navbar-inverse .navbar-nav > li > a {
-            color: #000;
-        }
-        
-        .row.content{
-            height: 450px
-        }
-        
-        .sidenav {
-            padding-top: 20px;
-            background-color: #f1f1f1;
-            height: 100%;
-            color: black;
-        }
-        
-        footer {
-            background-color: #874356;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        .item{
-          align-items: center;
-        }
-        
-        
-        @media screen and (max-width: 767px) {
-            .sidenav {
-            height: auto;
-            padding: 15px;
-        }
-            .row.content {height:auto;} 
-        }
-        body{
-          background-color: #F6E7D8;
-        }
+    .margin{
+      margin-top: 20px;
+    }
+            
+    body{
+      position: relative;
+        background-color: #F6E7D8;
+      }
 
-        .fondo{
-          background-image: url(../img/IMG-20211123-WA0044.jpg);
-          background-size: 100%;
-          height: 100%;}
-        
-        
-      </style>
+    
+    @media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        width: auto;
+        padding: 15px;
+      }
+    
+    .row.content {
+        height:auto;} 
+      }
+         
+    </style>
 
 </head>
 <body>
@@ -88,7 +95,7 @@
         </div>
       </nav>
 
-      <div id="myCarousel" class="carousel slide justify-content-center" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide margin" data-ride="carousel">
         
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -102,7 +109,7 @@
         
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="../img/flyer 1.jpg" alt="flyer">
+            <img src="../img/flyer 1.jpg" class="centrar" alt="flyer">
             <div class="carousel-caption">
               <h3>flyer</h3>
               <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -110,7 +117,7 @@
           </div>
       
           <div class="item">
-            <img src="../img/flyer 2.jpg" alt="flyer">
+            <img src="../img/flyer 2.jpg" class="centrar" alt="flyer">
             <div class="carousel-caption">
               <h3>flyer</h3>
               <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -118,7 +125,7 @@
           </div>
       
           <div class="item">
-            <img src="../img/flyer 3.jpg" alt="flyer">
+            <img src="../img/flyer 3.jpg" class="centrar" alt="flyer">
             <div class="carousel-caption">
               <h3>Flyer</h3>
               <p>Beautiful flowers in Kolymbari, Crete.</p>
@@ -126,7 +133,7 @@
           </div>
       
           <div class="item">
-            <img src="../img/flyer 4.jpg" alt="Flyer">
+            <img src="../img/flyer 4.jpg" class="centrar" alt="Flyer">
             <div class="carousel-caption">
               <h3>Flyer</h3>
               <p>Beautiful flowers in Kolymbari, Crete.</p>
@@ -134,7 +141,7 @@
           </div>
 
           <div class="item">
-            <img src="../img/flyer 5.jpg" alt="Flyer">
+            <img src="../img/flyer 5.jpg" class="centrar" alt="Flyer">
             <div class="carousel-caption">
               <h3>Flyer</h3>
               <p>Beautiful flowers in Kolymbari, Crete.</p>
@@ -142,7 +149,7 @@
           </div>
 
           <div class="item">
-            <img src="../img/flyer 6.jpg" alt="Flyer">
+            <img src="../img/flyer 6.jpg" class="centrar" alt="Flyer">
             <div class="carousel-caption">
               <h3>Flyer</h3>
               <p>Beautiful flowers in Kolymbari, Crete.</p>
@@ -161,19 +168,11 @@
         </a>
       </div>
      
-    <div class="container">
-        <img src="../img/flyer 1.jpg" class="col-sm-4 img-responsive" style="padding-top: 15px;padding-bottom: 15px;" border-radius: 30px; alt="flyer">
-        <img src="../img/flyer 2.jpg" class="col-sm-4 img-responsive" style="padding-top: 15px;padding-bottom: 15px;" border-radius: 30px; alt="flyer">
-        <img src="../img/flyer 3.jpg" class="col-sm-4 img-responsive" style="padding-top: 15px;padding-bottom: 15px;" border-radius: 30px; alt="flyer">
-        <img src="../img/flyer 4.jpg" class="col-sm-4 img-responsive" style="padding-top: 15px;padding-bottom: 15px;" border-radius: 30px; alt="flyer">
-        <img src="../img/flyer 5.jpg" class="col-sm-4 img-responsive" style="padding-top: 15px;padding-bottom: 15px;" border-radius: 30px; alt="flyer">
-        <img src="../img/flyer 6.jpg" class="col-sm-4 img-responsive" style="padding-top: 15px;padding-bottom: 15px;" border-radius: 30px; alt="flyer">
-    </div >
-
-
-    <div class="row">
+      <div class="row">
         <div class="col-sm-12"><footer>Todos los derechos reservados</footer></div>
-    </div>
+      </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
