@@ -33,9 +33,10 @@
         }
         
         footer {
-            background-color: #555;
+            background-color: #874356;
             color: white;
             padding: 15px;
+            text-align: center;
         }
         
         
@@ -74,27 +75,30 @@
         </div>
       </nav>
 <section class="container">
-    <form>
-        <fieldset>
-        <h3>Para comunicarte con Atlántico sur</h3>
-        </fieldset>
-        <fieldset>
-            <legend><h2>Contacto</h2></legend>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" required placeholder="ingresa tu nombre">
+    <h3>Para comunicarte con Atlántico sur</h3>
+    <form class="form-horizontal" action="/action_page.php">
+        <legend><h2>Contacto</h2></legend>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="nombre">Nombre:</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" id="nombre" required placeholder="ingresa tu nombre" name="nombre">
                 </div>
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" required placeholder="ingresa tu apellido">
-                    </div>
-                
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required placeholder="escribe tu mail">
                 </div>
-                <div>
-                    <label for="elija una opción">Elija una opción</label>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="apellido">Apellido</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" id="apellido" required placeholder="ingresa tu apellido" name="apellido">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email</label>
+                    <div class="col-sm-4">
+                    <input type="email" class="form-control" id="email" required placeholder="escribe tu mail" name="email">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="elija una opción">Elija una opción</label>
+                    <div class="col-sm-2"></div>
                     <select name="" id="">
                         <option value="" disabled >seleccione una opcion</option>
                         <option value="">Hombre</option>
@@ -102,31 +106,37 @@
                         <option value="">Otro</option>
                     </select>
                 </div>
-                <div>
-                    <table>
-                        <tr>
-                            <td><label for="">Comentarios</label></td>
-                        </tr>
-                        <tr>
-                            <td><textarea placeholder="dejanos tu opinión"></textarea></td>
-                        </tr>
-                    </table>
                 </div>
-                <div>
-                    <label for="si">Acepto términos y condiciones</label>
-                    <input type="radio" name="" id="si">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="">Comentarios</label>
+                    <div class="col-sm-4">
+                        <textarea class="col-sm-12" placeholder="dejanos tu opinión"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="si">Acepto términos y condiciones</label>
+                    
+                    <div class="col-sm-1">
+                    <input type="radio" class="form-control" name="si" id="si">
+                    </div>
                 </div>
                 <br>
-                <div>
-                    <input type="submit" value="enviar">
-                    <input type="reset" value="Limpiar formulario">
-                </div>    
-                </fieldset>
-        <h4> &#9829; &#9829; &#9829; &#9829; &#9829;</h4>
+                <div class="form-group">
+                    <div class="col-sm-2">
+                        <input type="submit" class="form-control" value="enviar">
+                    </div>
+                    <div class="col-sm-4">  
+                    <input type="reset" class="form-control" value="Limpiar formulario">
+                    </div>    
+                
+        
     
     </form>
     
-<div class="container"><footer>Todos los derechos reservados</footer></div>
+    
 </section>
+<div class="row">
+    <div class="col-sm-12"><footer>Todos los derechos reservados</footer></div>
+</div>
 </body>
 </html>
