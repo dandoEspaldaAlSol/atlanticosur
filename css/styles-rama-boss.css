@@ -1,11 +1,12 @@
 
   #fondoIndex{
-    background-image: url("../atlanticosur/img/IMG-20211123-WA0044.jpg");
+    background-image: url("../img/IMG-20211123-WA0044.jpg");
   }
 
   .centrar{
-    text-align: center;
-  }
+    margin:auto;
+    display:block;
+}
 
   body{
     margin: 0;
@@ -26,6 +27,7 @@
         
 .row.content{
     height: 450px
+  
   }
         
 .sidenav {
