@@ -44,7 +44,7 @@ img{
   }
         
 footer {
-    position: flex;
+    position: fixed;
     width:100%;
     background-color: #874356;
     color: white;
@@ -56,8 +56,7 @@ footer {
   
   .carousel, .carousel-inner > .item > img {
     height: 800px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
   }
   .carousel-control.left {
     background-image:none;
@@ -67,6 +66,32 @@ footer {
     background-image:none;
     }
   
+.buttons{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  display: flex;
+  margin-top: 38%;
+}
+.buttons a {
+  text-decoration: none;
+  font-size: 4rem;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #874356;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, .5);
+  opacity: 80%;
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
+
 @media screen and (max-width: 767px) {
 .sidenav {
     height: auto;
