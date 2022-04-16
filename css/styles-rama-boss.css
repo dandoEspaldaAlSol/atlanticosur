@@ -79,7 +79,7 @@ footer{
   justify-content: center;
   margin-bottom: 60px;
   display: flex;
-  margin-top: 38%;
+  margin-top: 50%;
 }
 
 .buttons a {
@@ -109,10 +109,11 @@ footer{
   }
 
 .row.content {
-    height:auto;} 
+    height:auto; 
   }
 
   .buttons{
-    margin-top: 140%;
+    margin-top: 135%;
   }
+}
      
