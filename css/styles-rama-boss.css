@@ -100,6 +100,9 @@ footer{
 .buttons a:hover {
   transform: scale(1.2);
 }
+.logo{
+  z-index: 5;
+}
 
 @media screen and (max-width: 767px) {
 .sidenav {
