@@ -39,7 +39,7 @@ body {
   padding-top: 20px;
   background-color: #f1f1f1;
   height: 100%;
-  color: #000; }
+  color: #f1f1f1; }
 
 img {
   max-width: 400px; }
@@ -47,7 +47,7 @@ img {
 footer {
   position: fixed;
   width: 100%;
-  background-color: #F68989;
+  background-color: #874356;
   color: #f1f1f1;
   padding: 15px;
   bottom: 0;
@@ -84,6 +84,8 @@ footer {
     transition: all .4s ease-in-out; }
     .buttons a:hover {
       transform: scale(1.2); }
+
+      
 
 @media screen and (max-width: 767px) {
   .sidenav {
