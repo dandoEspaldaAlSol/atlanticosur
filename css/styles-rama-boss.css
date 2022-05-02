@@ -68,7 +68,7 @@ footer {
   justify-content: center;
   margin-bottom: 60px;
   display: flex;
-  margin-top: 48%; }
+  margin-top: 35%; }
   .buttons a {
     text-decoration: none;
     font-size: 4rem;
@@ -85,7 +85,29 @@ footer {
     .buttons a:hover {
       transform: scale(1.2); }
 
-      
+.imgRotacion {
+  max-width: 400px;
+  max-height: 400px; }
+
+.fuenteNombre, .colorJuan, .colorLuna {
+  font-weight: bold;
+  font-size: 3rem; }
+
+.colorIvi {
+  color: #874356; }
+
+.colorCande {
+  color: #874356; }
+
+.colorJuan {
+  color: #000; }
+
+.colorLuna {
+  color: #F68989; }
+
+.imgCard {
+  width: 600px;
+  height: 600px; }
 
 @media screen and (max-width: 767px) {
   .sidenav {
@@ -99,7 +121,10 @@ footer {
   .buttons {
     margin-top: 135%; }
   .carousel .carousel-inner .item img {
-    height: 600px; } }
+    height: 600px; }
+  .imgCard {
+    width: 600px;
+    height: 500px; } }
 
 @media (max-width: 777px) and (orientation: landscape) {
   .imgRotacion {

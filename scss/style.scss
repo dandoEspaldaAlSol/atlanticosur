@@ -97,7 +97,7 @@ body{
     justify-content: center;
     margin-bottom: 60px;
     display: flex;
-    margin-top: 48%;
+    margin-top: 35%;
             a{
                 text-decoration: none;
                 font-size: 4rem;
@@ -117,7 +117,45 @@ body{
                 }
 
     }
+
+     .imgRotacion{
+      max-width: 400px;
+      max-height: 400px;
+   }
+   
+   .fuenteNombre{
+     font-weight: bold;
+     font-size: 3rem;
+   }
+
   
+
+   @each $contenedores in colorIvi, colorCande{
+     .#{$contenedores}{
+       color: #{$color-footer}
+     }
+  }
+
+   .colorJuan{
+     @extend .fuenteNombre;
+     color: $color-font-oscuro;
+   }
+
+   .colorLuna{
+     @extend .fuenteNombre;
+     color: $color-fondo;
+   }
+  
+   @mixin sizes($width, $height) {
+     width: $width;
+     height: $height;
+    }
+
+   .imgCard{
+     @include sizes(600px, 600px);
+   }
+
+
  
   @media screen and (max-width: 767px){
     .sidenav{
@@ -144,6 +182,10 @@ body{
                 }
             }
         }
+    }
+  
+    .imgCard{
+      @include sizes(600px, 500px);
     }
 
 }
