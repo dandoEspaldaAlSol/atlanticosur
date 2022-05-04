@@ -1,98 +1,96 @@
 @import "colores";
 
 html{
-    position: relative;
-    min-height: 100%;
-  }
+  position: relative;
+  min-height: 100%;
+}
   
 #fondoIndex{
-    background-image: url("../img/IMG-20211123-WA0044.jpg");
-  }
+  background-image: url("../img/IMG-20211123-WA0044.jpg");
+}
   
 .centrar{
-    margin: auto;
-    display: block;
-  }
+  margin: auto;
+  display: block;
+}
 
 p{
-    font-size: 1.5rem;
-  }
+  font-size: 1.5rem;
+}
   
 body{
-    margin: 0;
-    background-color: $color-body-pastel;
-    background-size: 100%;
-    height: 100%;
-  }
+  margin: 0;
+  background-color: $color-body-pastel;
+  background-size: 100%;
+  height: 100%;
+}
     
 .navbar{
-    margin-bottom: 0;
-    border-radius: 0;
-    background-color: $color-fondo;
-    border: 0;
-    width: 100%;
-  }
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: $color-fondo;
+  border: 0;
+  width: 100%;
+}
   
 .navbar-inverse{ 
     .navbar-nav{
         li{ 
-            font-size: 2rem;
-                a{
-                    color: $color-font-oscuro;}
-            }
-        }  
-    }
+          font-size: 2rem;
+            a{
+            color: $color-font-oscuro;}
+          }
+     }  
+}
 
   
 .row{
-    margin-bottom: 50px;
-        content{
-            height: 450px
+  margin-bottom: 50px;
+    content{
+        height: 450px
         }
   }
   
-  
 .sidenav{
-    padding-top: 20px;
-    background-color: $color-font-claro;
-    height: 100%;
-    color: $color-font-claro;
-  }
+  padding-top: 20px;
+  background-color: $color-font-claro;
+  height: 100%;
+  color: $color-font-claro;
+}
   
-  img{
-    max-width: 400px;
-  }
+img{
+  max-width: 400px;
+}
   
-  footer{
-    position: fixed;
-    width:100%;
-    background-color: $color-footer;
-    color: $color-font-claro;
-    padding: 15px;
-    bottom: 0;
-    text-align: center;
+footer{
+  position: fixed;
+  width:100%;
+  background-color: $color-footer;
+  color: $color-font-claro;
+  padding: 15px;
+  bottom: 0;
+  text-align: center;
+}
     
-  }
-    
-  .carousel{
+.carousel{
       .carousel-inner{ 
           .item{ 
               img{
-                    height: 800px;
-                    margin-top: 5px;}
+                  height: 800px;
+                  margin-top: 5px;}
                 }
             }
         }
     
-  .carousel-control.left{
-    background-image: none;
-  }
+.carousel-control.left{
+  background-image: none;
+}
    
-  .carousel-control.right{
-    background-image: none;
-  }
+.carousel-control.right{
+  background-image: none;
+}
   
-  .buttons{
+.buttons{
     align-items: center;
     justify-content: center;
     margin-bottom: 60px;
@@ -118,81 +116,79 @@ body{
 
     }
 
-     .imgRotacion{
-      max-width: 400px;
-      max-height: 400px;
-   }
+.imgRotacion{
+    max-width: 400px;
+    max-height: 400px;
+}
    
-   .fuenteNombre{
-     font-weight: bold;
-     font-size: 3rem;
-   }
+.fuenteNombre{
+    font-weight: bold;
+    font-size: 3rem;
+}
 
-  
-
-   @each $contenedores in colorIvi, colorCande{
+@each $contenedores in colorIvi, colorCande{
      .#{$contenedores}{
        color: #{$color-footer}
      }
   }
 
-   .colorJuan{
-     @extend .fuenteNombre;
-     color: $color-font-oscuro;
-   }
+.colorJuan{
+    @extend .fuenteNombre;
+    color: $color-font-oscuro;
+  }
 
-   .colorLuna{
-     @extend .fuenteNombre;
-     color: $color-fondo;
-   }
+.colorLuna{
+    @extend .fuenteNombre;
+    color: $color-fondo;
+  }
   
-   @mixin sizes($width, $height) {
-     width: $width;
-     height: $height;
-    }
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+  }
 
-   .imgCard{
-     @include sizes(600px, 600px);
-   }
+  .imgCard{
+    @include sizes(600px, 600px);
+  }
 
 
  
-  @media screen and (max-width: 767px){
-    .sidenav{
-      height: auto;
-      width: auto;
-      padding: 15px;
-            li{
-                font-size: 1.5rem;}
-    }
+@media screen and (max-width: 767px){
+  .sidenav{
+    height: auto;
+    width: auto;
+    padding: 15px;
+          li{
+              font-size: 1.5rem;}
+  }
   
-    .row.content{
-      height:auto; 
-    }
+  .row.content{
+    height:auto; 
+  }
   
-    .buttons{
-      margin-top: 135%;
-    }
+  .buttons{
+    margin-top: 135%;
+  }
   
-    .carousel{
-        .carousel-inner{ 
-            .item{ 
-                img{
-                    height: 600px;
+  .carousel{
+      .carousel-inner{ 
+          .item{ 
+              img{
+                  height: 600px;
                 }
             }
         }
     }
   
-    .imgCard{
-      @include sizes(600px, 500px);
-    }
+  .imgCard{
+    @include sizes(600px, 500px);
+  }
 
 }
   
-  @media (max-width: 777px) and (orientation: landscape){ 
-    .imgRotacion{
-        max-width: 300px;
-        max-height: 300px;
+@media (max-width: 777px) and (orientation: landscape){ 
+  .imgRotacion{
+      max-width: 300px;
+      max-height: 300px;
     }
 }
