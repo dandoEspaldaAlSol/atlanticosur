@@ -183,6 +183,11 @@ footer{
   .imgCard{
     @include sizes(600px, 500px);
   }
+  
+  .imgRotacion{
+    max-width: 300px;
+    max-height: 300px;
+  }
 
 }
   
